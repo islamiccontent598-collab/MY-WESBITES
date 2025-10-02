@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutus.css.css">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+
+    <div class="background">
+        <h1>WELCOME TO YOUR OWN STORE</h1>
+            <div class="logo-background">
+            <img src="images/logo.png" height="200px" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="mens.html">MEN's</a></li>
+                <li><a href="womens.html">WOMEN's</a></li>
+                <li><a href="electronics.html">ELECTRONICS</a></li>
+                <li><a href="home&decor.html">HOME & DECOR</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            </div>
+            <div class="about-hero">
+            <div class="about-text">
+                <h3>YOUR OWN STORE</h3>
+                <h1>ABOUT US</h1>
+                <p>Upgrade your wardrobe and gadgets with the latest trend. <br> Unbeatable prices, premium quality and fast service</p>
+                <div class="about-text-button">
+                <a href="">Explore Collection</a>
+                </div>
+            </div>
+            <div class="about-img">
+              <img src="images/aboutimg.png" height="360px">
+            </div>
+            </div>
+    </div>
+
+        <!-- Hero Section -->
+
+
+
+        <!-- about Section -->
+
+<div class="about-section1">
+    <div class="col-2">
+        <h2>Manager</h2>
+        <h1>ASSAN DIOP</h1>
+        <p>Learn How to Quickly Generate Placeholder Text Using a Lorem Ipsum Tool. Explore How Lorem Ipsum Generators Can Liven up Your Web Layout Wireframes and Mockups. 100+ Templates. A/B Testing & Surveys.</p>
+        <div class="experties">
+        <h3>EXPERT</h3>
+        <h3>YOUNG</h3>
+        <h3>22y EXP</h3>
+        </div>
+      </div>
+    <div class="col-2">
+        <img src="images/managerimg.png" height="500px"> 
+    </div>
+</div>
+
+<div class="about-sections">
+  <h1>WORKERS</h1>
+  <div class="row">
+    <div class="col-3">
+        <img src="images/manager-1.png">
+        <div class="text">
+            <!-- Worker 1 -->
+<div class="worker-card">
+  <div class="worker-info" id="workerInfo1"></div>
+</div>
+        </div>
+    </div>
+    <div class="col-3">
+        <img src="images/manager-2.png">
+        <div class="text">
+            <!-- Worker 2 -->
+<div class="worker-card">
+  <div class="worker-info" id="workerInfo2"></div>
+</div>
+        </div>
+    </div>
+    <div class="col-3">
+        <img src="images/manager-3.png">
+        <div class="text">
+            <!-- Worker 3 -->
+<div class="worker-card">
+  <div class="worker-info" id="workerInfo3"></div>
+</div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+        <!-- about Section -->
+
+
+<!---------- FOOTER  -------------->
+
+<footer class="footer">
+  <div class="col">
+    <h3>ABOUT US</h3>
+    <p>Our Story <br>
+    Careers <br>
+    Affiliate Program <br>
+    Press & Media <br>
+    Sustainability <br>
+    Blog <br>
+    Investor Relations <br>
+    Wholesale Program</p>
+  </div>
+  <div class="col">
+    <h3>CUSTOMER HELP</h3>
+    <p>
+      Returns & Exchanges <br>
+Shipping Information <br>
+Track Your Order <br>
+Promo Code Lookup <br>
+Gift Card Lookup <br>
+Contact Us <br>
+Help Center <br>
+Retail Store Locator <br>
+    </p>
+  </div>
+  <div class="col">
+    <div class="col-empty">
+    <p>
+      Shipping Information <br>
+Track Your Order <br> 
+Order Cancellation <br>
+Payment Options <br>
+Warranty & Repairs <br>
+FAQs <br>
+Store Locator <br>
+    </p>
+    </div>
+  </div>
+  <div class="col-right">
+    <h3>CONNECT WITH US</h3>
+    <!-- Social Media Icons -->
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://x.com" target="_blank" class="twitter"><i class="fab fa-x-twitter"></i></a>
+  <a href="https://youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+  <a href="https://linkedin.com" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://pinterest.com" target="_blank" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+  <a href="https://tiktok.com" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+</div>
+<p>"stay updated with our latest products and offers. Follow us on social media"</p>
+<button>SUBSCRIBE NOW</button>
+  </div>
+</footer>
+
+
+<!---------- FOOTER  -------------->
+
+
+
+
+
+
+<script>
+// Worker data (sab workers ka data ek array mai)
+const workers = [
+  {
+    elementId: "workerInfo1",
+    data: ["Name: Angel", "Age: 36", "Experience: 7 years"]
+  },
+  {
+    elementId: "workerInfo2",
+    data: ["Name: John", "Age: 30", "Experience: 5 years"]
+  },
+  {
+    elementId: "workerInfo3",
+    data: ["Name: Aqeel", "Age: 53", "Experience: 3 years"]
+  }
+];
+
+// Function to rotate info for any worker
+function startRotation(worker) {
+  const infoElement = document.getElementById(worker.elementId);
+  let index = 0;
+
+  function rotateInfo() {
+    infoElement.classList.add("hidden");
+
+    setTimeout(() => {
+      infoElement.textContent = worker.data[index];
+      infoElement.classList.remove("hidden");
+      index = (index + 1) % worker.data.length;
+    }, 500);
+  }
+
+  // Har 2 second baad rotate hoga
+  setInterval(rotateInfo, 2000);
+  rotateInfo();
+}
+
+// Start rotation for all workers
+workers.forEach(startRotation);
+
+</script>
+
+ 
+</body>
+</html>

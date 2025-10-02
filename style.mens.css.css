@@ -1,0 +1,486 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  poppins;
+}
+
+.shadow:hover{
+    box-shadow: 0 8px 16px rgba(173, 173, 173, 0.8);
+}
+
+ body {
+    background-color: rgb(255, 243, 228);
+    height: 100%;
+    width: 100%;
+}
+.background{
+    width: 100%;
+    height: 570px;
+    background-color: chocolate;
+}
+.background h1 {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.logo-background{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-top: 20px;
+    padding: 20px 10px;
+}
+.logo{
+    height: 150px;
+    padding-top: 8px;
+    position: absolute;
+}
+.logo-background ul{
+    flex: 1;
+    text-align: right;
+}
+.logo-background ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 15px;
+}
+.logo-background ul li a{
+    text-decoration: none;
+    color: chocolate;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+
+/* HERO TEXT */
+
+
+.herotext{
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 70px;
+}
+.herotext h3{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: poppins;
+}
+
+.herotext h1{
+    color: yellow;
+    font-size: 65px;
+    font-weight: 700;
+    font-family: poppins;
+    text-align: left;
+    line-height: 70px;
+    padding-top: 15px;
+}
+.herotext p{
+    color: white;
+    font-size: 17px;
+    font-weight: 200;
+    font-family: poppins;
+    padding-top: 15px;
+}
+.herotext .btn {
+    color: chocolate;
+    text-decoration: none;
+    background: yellow;
+    border-radius: 6px;
+    padding: 7px 10px;
+    margin-top: 17px;
+    position:absolute;
+    font-weight: 500;
+}
+.background .hero-img{
+    width: 100%;
+    height: 100%px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -270px;
+    padding-right: 60px;
+    position: relative;
+    filter: drop-shadow(0 0 20px #ffbc04fe)
+}
+
+/* HERO TEXT */
+
+
+/* mens collection */
+
+.row{
+    max-width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-4{
+    background-color: chocolate;
+    width: 300px;
+    height: 380px;
+    border-radius: 7px;
+    flex-basis: 25%;
+    margin: 50px 10px;
+    padding: 10px 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.col-4:hover {
+    transform: translateY(-10px); /* move up by 10px */
+}
+
+.col-4 img{
+    width: 100%;
+    border-radius: 7px;
+}
+.col-4 h1{
+    padding-top: 5px;
+    z-index: 1;
+    font-size: 20px;
+    color: antiquewhite;
+    font-weight: 200;
+}
+
+.col-4 h3{
+    margin-top: -10px;
+    padding-top: -25px;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: 400;
+    color: antiquewhite;
+}
+
+.rating-stars{
+    margin-top: -6px;
+    color: #ffbc04fe;
+}
+
+.col-4 button {
+    background-color: #ffbc04fe;
+    position: absolute;
+    padding: 3px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-top: -6px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    border: none;
+
+}
+.col-4 button:hover{
+    background-color: white;
+    color: #ffbc04fe;
+}
+
+/* mens collection */
+
+
+/* MENS-MODEL */
+.mens-model{
+    top: 0;
+    left: 0;
+    background-color: rgba( 0, 0, 0, 0.7 );
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    z-index: 1000;
+    display: none;
+}
+.mens-model-content{
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+}
+
+.mens-col-1 , .mens-col-2{
+    flex-basis: 45%;
+}
+
+.mens-col-1 img{
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.preview img{
+    width: 410px;
+    border: 5px solid white;
+    border-radius: 7px;
+    box-shadow: 0px 5px 15px rgba( 0, 0, 0, 0.3);
+}
+.slider img{
+    border: 5px solid white;
+    border-radius: 7px;
+    width: 100px;
+    box-shadow: 0px 5px 15px rgba( 0, 0, 0, 0.3);
+}
+
+.mens-col-2{
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+.mens-col-2 h2{
+    background-color: chocolate;
+    color: white;
+    padding: 5px 10px;
+    margin-top: -30px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+}
+
+.mens-col-2 h3 {
+    color: chocolate; 
+    font-size: 45px;
+    font-weight: 500;
+    text-align: start;
+    line-height: 50px;
+    padding-top: 20px;
+}
+
+.mens-col-2 .rating-stars{
+    color: #ffbc04fe;
+} 
+
+.mens-col-2 input{
+    width: 30px;
+} 
+.mens-col-2 p {
+    font-size: 25px;
+    color: chocolate;
+} 
+.mens-col-2 button {
+    background-color: #ffbc04fe;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    position: fixed;
+} 
+.mens-col-2 button:hover{
+    background-color: white;
+    color: #ffbc04fe;
+    border: 1px solid #ffbc04fe;
+
+} 
+
+.men-close{
+    font-size: 30px;
+    color: white;
+    background-color: chocolate;
+    border-radius: 20%;
+    padding: 0 10px;
+    position: absolute;
+    margin-left: 90%;
+    transition: 1s;
+    margin-top: -40%;
+}
+.men-close:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+
+/* MENS-MODEL */
+
+
+
+
+/* CART MODEL */
+
+.mens-cart-model{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    height: 95%;
+    right: -100%;
+    top: 0;
+    transition: right 0.4s ease-in-out; /* Smooth transition */
+    z-index: 1010;
+}
+
+.mens-cart-model.active{
+    right: 0;
+}
+
+.moodel-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.moodel-content h1{
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    color: chocolate;
+    font-weight: 500;
+    border-bottom: 2px solid #eee;
+    width: 100%;
+}
+.cart-close{
+    font-size: 20px;
+    color: white;
+    background-color: chocolate;
+    border-radius: 20%;
+    padding: 0 10px;
+    position: absolute;
+    margin-left: 85%;
+    transition: 1s;
+}
+.cart-close:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.mens-cart-model h3{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 10px;
+    color: chocolate;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+
+.mens-cart-model button{
+    position: absolute;
+    bottom: 0;
+    left: 37%;
+    padding: 5px 10px;
+    margin: 20px 0;
+    background-color: #ffbc04fe;
+    color: white;
+    transition: 0.3s;
+    border: none;
+    border-radius: 7px;
+}
+
+.mens-cart-model button:hover{
+    background-color: white;
+    color: #ffbc04fe;
+    border: 1px solid #ffbc04fe;
+}
+/* CART MODEL */
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 30%;
+    height: 400px;
+    gap: 20px;
+    background-color: chocolate;
+    margin-top: 100px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.footer .col h3 {
+    padding-top: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer .col p{
+    margin-top: 20px;
+    color: white;
+    font-weight: 100;
+}
+
+.col-empty{
+    margin-top: 90px;
+    color: white;
+    font-weight: 100;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  margin-top: 20px;
+  font-size: 28px;  /* icon size */
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+  background-color: white;
+  border-radius: 30%;
+  padding: 0px 7px;
+}
+
+/* Brand Colors */
+.social-icons a.facebook { color: #1877f2; }   /* Facebook Blue */
+.social-icons a.twitter { color: #000000; }   /* Twitter (X) Black */
+.social-icons a.youtube { color: #ff0000; }   /* YouTube Red */
+.social-icons a.linkedin { color: #0077b5; }  /* LinkedIn Blue */
+.social-icons a.pinterest { color: #e60023; } /* Pinterest Red */
+.social-icons a.tiktok { color: #010101; }    /* TikTok Black */
+
+/* Hover effect */
+.social-icons a:hover {
+  opacity: 0.7;
+}
+
+
+.col-right h3{
+    color: white;
+    font-size: 25px;
+    padding-top: 30px;
+    font-weight: 500;
+}
+.col-right p{
+    margin-top: 20px;
+    color: white;
+    font-weight: 100;
+}
+.col-right button{
+    margin-top: 20px;
+    padding: 7px 10px;
+    background-color: #ffbc04fe;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.col-right button:hover{
+    color: #ffbc04fe;
+    background-color: white;
+}
+/* FOOTER */
